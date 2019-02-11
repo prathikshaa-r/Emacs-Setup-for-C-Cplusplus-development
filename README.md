@@ -4,6 +4,10 @@ C/C++ development environment setup provided by Prof. Drew Hilton @ Duke ECE.
 Requires Emacs v24 and above.
 Uses melpa archive packages.
 
+Add these lines to the top of the .emacs file:
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
 Then run M-x list-packages and install the following:\
   clang-format       20180406.1514 installed             Format code using clang-format\
   company            20180802.1207 installed             Modular text completion framework\
